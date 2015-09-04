@@ -1,0 +1,153 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.export_btn {
+    width: 16px;
+    height: 16px;
+    border: 0px none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 1px;
+    cursor: pointer;
+}
+
+.export_excel {
+    background-image: url('../pic/WebResource.gif');
+    background-position: 0px 0px;
+}
+
+.export_doc {
+    background-image: url('../pic/WebResource.gif');
+    background-position:0 -50px;
+}
+
+.export_pdf {
+    background-image: url('../pic/WebResource.gif');
+    background-position:0 -100px;
+}
+
+.export_csv {
+    background-image: url('../pic/WebResource.gif');
+    background-position:0 -150px;
+}
+
+.tma_pic_axd {
+    width: 16px;
+    height: 16px;
+    border: 0px none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+.tma_pic_add {
+    background-image: url('../pic/axd.png');
+    background-position: 0px 0px;    
+}
+
+.tma_pic_del {
+    background-image: url('../pic/axd.png');
+    background-position: -20px 0px;    
+}
+
+
+.tma_pic_ok {
+    background-image: url('../pic/axd.png');
+    background-position: -40px 0px;    
+}
+
+.tma_pic_cancel {
+    background-image: url('../pic/axd.png');
+    background-position: -60px 0px;    
+}
+
+.tma_pic_back {
+    background-image: url('../pic/axd.png');
+    background-position: -80px 0px;    
+}
+
+.tma_pic_forward {
+    background-image: url('../pic/axd.png');
+    background-position: -100px 0px;    
+}
+
+.tma_pic_save {
+    background-image: url('../pic/axd.png');
+    background-position: -120px 0px;    
+}
+
+.tma_pic_setup {
+    background-image: url('../pic/axd.png');
+    background-position: -140px 0px;    
+}
+
+.tma_pic_reload {
+    background-image: url('../pic/axd.png');
+    background-position: -160px 0px;    
+}
+
+.tma_pic_edit {
+    background-image: url('../pic/axd.png');
+    background-position: -180px 0px;    
+}
+
+.tma-panel-body {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+
+.tma-w100 {
+    width: 100%;
+}

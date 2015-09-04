@@ -1,0 +1,141 @@
+
+composer global require "laravel/installer=~1.1"
+
+~/.composer/vendor/bin/laravel new morelia
+
+cd morelia
+
+chmod 777 storage -R
+chmod 777 bootstrap/cache -R
+
+composer update
+
+
+composer dumpautoload
+
+
+
+php artisan vendor:publish
+
+
+php artisan migrate
+
+
+http://www.maatwebsite.nl/laravel-excel/docs/getting-started
+http://www.maatwebsite.nl/laravel-excel/docs/getting-started#installation
+
+
+php artisan session:table
+
+composer dump-autoload
+
+php artisan migrate
+
+
+https://github.com/megaspy/morelia.git
+
+-----------
+
+cd /var/www/html
+
+composer global require "laravel/installer=~1.1"
+
+~/.composer/vendor/bin/laravel new morelia
+
+cd morelia
+
+composer install
+
+git init
+
+git fetch -u https://github.com/megaspy/morelia.git master
+
+git reset --hard FETCH_HEAD
+
+git clean -df
+
+composer install
+
+composer dumpautoload
+
+chmod 777 storage -R
+
+chmod 777 bootstrap/cache -R
+
+vi .env
+
+DB_HOST=127.0.0.1
+DB_DATABASE=morelia
+DB_USERNAME=morelia
+DB_PASSWORD=baseball
+DB_PORT=4040
+
+CREATE TABLE `migrations` (
+  `migration` VARCHAR(255) COLLATE utf8_unicode_ci NOT NULL,
+  `batch` INT(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ALTER TABLE `users` CHANGE `loginpasswd` `loginpasswd` CHAR(60) NOT NULL;
+
+CREATE TABLE `sessions` (
+ `id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ `payload` text COLLATE utf8_unicode_ci NOT NULL,
+ `last_activity` int(11) NOT NULL,
+ UNIQUE KEY `sessions_id_unique` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+
+
+php artisan migrate
+
+cd ..
+
+ln -s /var/www/html/morelia/public/ /var/www/html/moreliapublic
+
+-------NEW--------
+
+new link http://10.1.1.27/huddtrakpublic
+
+new installation:
+
+cd /var/www/html
+
+composer global require "laravel/installer=~1.1"
+
+~/.composer/vendor/bin/laravel new huddtrak
+
+cd huddtrak
+
+composer install
+
+git init
+
+git fetch -u https://github.com/megaspy/morelia.git master
+
+git reset --hard FETCH_HEAD
+
+git clean -df
+
+composer install
+
+composer dumpautoload
+
+chmod 777 storage -R
+
+chmod 777 bootstrap/cache -R
+
+vi .env
+
+DB_HOST=127.0.0.1
+DB_DATABASE=huddtrak
+DB_USERNAME=huddtrak
+DB_PASSWORD=baseball
+DB_PORT=4040
+
+
+php artisan migrate
+
+cd ..
+
+
+ln -s /var/www/html/huddtrak/public/ /var/www/html/huddtrakpublic
