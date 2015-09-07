@@ -2,5 +2,5 @@
 @include('menu')
 @section('content')
     <p>This is my body content.</p>
-    {{$content}}
+    {!! $content !!}
 @endsection

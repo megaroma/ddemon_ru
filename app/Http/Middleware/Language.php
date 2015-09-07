@@ -31,7 +31,8 @@ class Language  {
 
             $c_locate = \Cookie::get('lang',''); //$request->cookie('lang','');
 
-            $c_locate =  \Crypt::decrypt($c_locate);
+            $c_locate = ($c_locate != '' ) ?  \Crypt::decrypt($c_locate) : '';
+
             if(($c_locate != "") && (array_key_exists($c_locate , $this->app->config->get('app.locales')))) {
                 $locale = $c_locate;
             } else {
