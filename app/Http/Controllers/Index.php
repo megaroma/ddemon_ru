@@ -89,6 +89,9 @@ class Index extends \DD\Crud\CrudController  // Controller
     public  function getTest(Request $request)
     {
    
+echo $_SERVER['HTTP_USER_AGENT'] . "\n\n";
+exit;
+
         return $this->boo();
 
         echo "<br>Boo<br>";

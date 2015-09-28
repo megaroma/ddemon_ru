@@ -1,4 +1,6 @@
+php artisan make:migration migration_name
 
+------
 composer global require "laravel/installer=~1.1"
 
 ~/.composer/vendor/bin/laravel new morelia
@@ -139,3 +141,23 @@ cd ..
 
 
 ln -s /var/www/html/huddtrak/public/ /var/www/html/huddtrakpublic
+
+
+
+
+----------------------------------
+
+заготовка сетка
+
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="short-div" style="background-color:green">Span 2</div>
+            <div class="short-div" style="background-color:purple">
+            	       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color:red;">Span 5</div>
+        			   <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="background-color:blue">Span 3</div>
+            </div>
+    	</div>
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="background-color:yellow">Span 2<br>sdffsd<br>adad<br>asdsad</div>
+

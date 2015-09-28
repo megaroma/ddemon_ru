@@ -146,7 +146,7 @@ return [
 
         //-----
         DD\Crud\CrudServiceProvider::class,
-        DDStudio\Widget\DDStudioWidgetServiceProvider.php::class
+        DDStudio\Widget\DDStudioWidgetServiceProvider::class
 
     ],
 

@@ -11,6 +11,7 @@
 |
 */
 
+Route::controller('admin', 'Admin\Dashboard');
 Route::controller('auth', 'DDAuth');
 Route::controller('/', 'Index');
 
